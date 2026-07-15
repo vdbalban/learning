@@ -23,5 +23,12 @@ int main(void)
     } while (c != -1);
     printf("F.B.I OPEN THE DOORS !!\n\n");
 
+    int compteur;
+    for(compteur = 3; compteur != -1; compteur--)
+    {
+        printf("%d\n", compteur);
+    }
+    printf("Vous etes arretez !!\n");
+
     return 0;
 }
