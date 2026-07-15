@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int a =0;
+    long a =0;
     long b =0;
     printf("\nBonjour,Entre un chiffre pour changer le monde\n");
     scanf("%ld", &b); //%ld tag d'un long
@@ -13,6 +13,15 @@ int main(void)
         }
     printf("\nSois fier de toi %ld enfant sont sur l'ile !", a);
     printf("\nEt tout ça, grace a ton choix !\n\n");
+
+    int c = 5;
+
+    do
+    {
+        printf("%d\n", c);
+        c--;
+    } while (c != -1);
+    printf("F.B.I OPEN THE DOORS !!\n\n");
 
     return 0;
 }
