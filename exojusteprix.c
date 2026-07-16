@@ -19,12 +19,12 @@ int main(void)
         scanf("%d", &estimation);
         if (estimation > prixReel)
         {
-            printf("\nReesaie c'est moins !\n");
+            write(1, "\nReesaie c'est moins !\n", 24);
             nombreEssaie++;
         }
         else if (estimation < prixReel)
         {
-            printf("\nReesaie, c'est plus !\n");
+            write(1,"\nReesaie, c'est plus !\n", 24);
             nombreEssaie++;
         }
     }
