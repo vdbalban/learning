@@ -17,7 +17,7 @@ int main(void)
                     printf("1 comme lapin\n");
                     break;
                 case 2:
-                    printf("2 passe moi la beuh\n");
+                    printf("2 passe moi le feu\n");
                     break;
                 case 3:
                     printf("3 je mange une oie\n");
@@ -29,7 +29,7 @@ int main(void)
                     printf("5 tape en cinq\n");
                     break;
                 case 6:
-                    printf("6 mange ma saucisse\n");
+                    printf("6 mange de la saucisse\n");
                     break;
                 default:
                     printf("Mauvaise entrée, Consigne chiffre entre 1 et 6\n");
