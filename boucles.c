@@ -4,14 +4,14 @@ int main(void)
 {
     long a =0;
     long b =0;
-    printf("\nBonjour,Entre un chiffre pour changer le monde\n");
+    printf("\nBonjour,Entre un chiffre\n");
     scanf("%ld", &b); //%ld tag d'un long
     while (a < b)
         {
         a++;
-        printf("Bravo, Jeffrey Epstein vient de capturer son %ldeme enfants !\n", a);
+        printf("Bravo, vous avez sauvé %ld chats !\n", a);
         }
-    printf("\nSois fier de toi %ld enfant sont sur l'ile !", a);
+    printf("\nSois fier de toi %ld chats sont sur l'ile au loisirs!", a);
     printf("\nEt tout ça, grace a ton choix !\n\n");
 
     int c = 5;
@@ -21,14 +21,14 @@ int main(void)
         printf("%d\n", c);
         c--;
     } while (c != -1);
-    printf("F.B.I OPEN THE DOORS !!\n\n");
+    printf("Miaouuu !!\n\n");
 
     int compteur;
     for(compteur = 3; compteur != -1; compteur--)
     {
         printf("%d\n", compteur);
     }
-    printf("Vous etes arretez !!\n");
+    printf("Grrrr !!\n");
 
     return 0;
 }
