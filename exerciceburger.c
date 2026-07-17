@@ -11,7 +11,7 @@ int main(void)
     printf("Merci de choisir votre menu ?\n");
     
     while (choixmenu) // Peut etre sans opérateur (+, -, ==)
-    {  
+    {                 // Dans cette situation choix menu a sa condition en boucle
         scanf("%d", &choixmenu); // Prendre l'input dans la boucle
         switch (choixmenu)
         {
