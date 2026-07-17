@@ -25,10 +25,18 @@ int main(void)
         printf("Vous avez selectionne le menu (4) Big Mouloud\n");
         break;
         default:
-        printf("Vous avez entrée une mauvaise selection\n");
-        break;
+        if (choixmenu < 4)
+            {
+                printf("Vous avez entrée une mauvaise selection\n");
+                printf("Merci de choisir votre menu ?\n");
+                scanf("%d", &choixmenu);
+            }
         }
-    
         
+        // default:
+        // printf("Vous avez entrée une mauvaise selection\n");
+        // printf("Merci de choisir votre menu ?\n");
+        // scanf("%d", &choixmenu);
+        // }
     return 0;
 }
