@@ -8,11 +8,11 @@ int main()
     scanf("%d", &age);
     if(age > 18) // if : si la condition est bonne fait
     {
-        printf("Vous etes majeur, accés Ynos anal en 1080p\n");
+        printf("Vous etes majeur\n");
     }
     else if(age < 18) // else if : Sinon si cet condition est bonne
     {
-        printf("Pas de porno gay pour toi\n");
+        printf("Retour a la page google\n");
     }
     else // Sinon fait cela
     {
