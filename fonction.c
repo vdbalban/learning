@@ -3,7 +3,7 @@
 
 int triple(int nombre)  // fonction de type int
 {
-    int resultat = 0;
+    int resultat;
 
     resultat = 3 * nombre; // Calcul du "nombre" fourni par 3
     return resultat; // retourner le resultat 
