@@ -9,7 +9,7 @@ int triple(int nombre)  // fonction de type int
     return resultat; // retourner le resultat 
 }     
     // Possibilité d'écrire : pour raccourcir
-    // int triple(int nombre )
+    // int triple(int nombre)
     // {
     //     return 3 * nombre;
     // }
@@ -17,13 +17,16 @@ int triple(int nombre)  // fonction de type int
 
 int main(void)
 {
-    int nombreEntre = 0, nombreTriple = 0;
+    int nombreEntre, nombreTriple;
 
-    write( 1,"Entrez un nombre :\n", 20);
+    write( 1,"Entrez un nombre : ... ", 24);
     scanf("%d", &nombreEntre);
 
     nombreTriple = triple(nombreEntre);
     printf("*** Le nombre triple est %d ***\n", nombreTriple);
 
+        // printf("Le triple de ce nombre est %d\n", triple(nombreEntre));
+        // Le résultat de la fonction est directement envoyé au printf et n'est pas stocké dans une variable
+        
     return 0;
 }
