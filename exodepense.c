@@ -44,15 +44,8 @@ double calcul_pourcentage(double salaire, double depense)
 	return (pourcentage);
 }
 
-int main(void)
+double resume(double salaire, double depense, double pourcentage, double reste)
 {
-	double	salaire;
-	double	depense;
-	double	reste; 
-	double	pourcentage;
-
-	salaire = calcul_salaire();
-	depense = calcul_depense();
 	reste = calcul_reste(salaire, depense); 
 	pourcentage = calcul_pourcentage(salaire, depense);
 	printf("\n     ===  RESUME  ===\n"); 
@@ -60,5 +53,19 @@ int main(void)
 	printf("Total des dépenses effectuées : %.2lf€\n", depense); 
 	printf("Restant sur salaire : %.2lf€\n", reste);
 	printf("Pourcentage fonds dépensé : %.1lf%%\n\n     ===          ===\n\n", pourcentage); //%% pour faire reconnaitre % comme caractere
+	return (0);
+}
+
+int main(void)
+{
+	double	salaire;
+	double	depense;
+	double	reste; 
+	double	pourcentage;
+	
+	salaire = calcul_salaire();
+	depense = calcul_depense();
+	reste = calcul_reste(salaire, depense);
+	pourcentage = calcul_pourcentage(salaire, depense);
 	return (0);
 }
