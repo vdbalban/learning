@@ -1,16 +1,18 @@
 #include <stdio.h>
 
-double calculSalaire(double salaire)
+double calculSalaire(void)
 {
+    double salaire;
     printf("\nQuel est votre salaire");
     printf("\nutilisez \".\" pour la virgule ... ");
     scanf("%lf", &salaire);
     return salaire;
 }
 
-double calculDepense(double depense)
+double calculDepense(void)
 {
-    double a = 1; depense = 0;    
+    double a = 1; 
+    double depense = 0;    
     while (a != 0)
     {
         printf("\nVeuillez saisir la depense, 0 pour terminer");
@@ -21,25 +23,16 @@ double calculDepense(double depense)
 return depense;
 }
 
-// double calculReste(double reste) //double resultatDepense,double resultatSalaire
-// {
-// return(resultatSalaire - resultatDepense);
-// }
-
-
-// double calculPourcentage(int Pourcentage)
-// {
-//     return Pourcentage;
-// }
-
 int main(void)
 {
-    double resultatSalaire = calculSalaire(0); //double resultatPourcentage = calculPourcentage(resultatPourcentage);
-    double resultatDepense = calculDepense(0); //double resultatRestant = calculReste(0);
+    double salaire = calculSalaire(); 
+    double depense = calculDepense();
+    double reste = (salaire - depense); 
+    double pourcentage = (depense / salaire * 100);
     printf("\n     ===  RESUME  ===\n"); 
-    printf("\nVotre salaire est de : %.2lf€\n", resultatSalaire); 
-    printf("Total des dépenses effectuées : %.2lf€\n", resultatDepense); 
-    //printf("Restant sur salaire : %.2lf€\n", resultatRestant);
-    // printf("Pourcentage fonds dépensé : %.0lf\%\n", resultatPourcentage); 
+    printf("\nVotre salaire est de : %.2lf€\n", salaire); 
+    printf("Total des dépenses effectuées : %.2lf€\n", depense); 
+    printf("Restant sur salaire : %.2lf€\n", reste);
+    printf("Pourcentage fonds dépensé : %.1lf%%\n\n     ===          ===\n\n", pourcentage); //%% pour faire reconnaitre % comme caractere
     return 0;
 }
