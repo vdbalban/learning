@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 // Send message to user "Hello world!"
-int main(int argc, char *argv[])
+int main(void)
 {
     printf("Bonjour");
     return 0;
