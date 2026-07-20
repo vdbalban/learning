@@ -43,7 +43,7 @@ double	calcul_pourcentage(double salaire, double depense)
 	return (pourcentage);
 }
 
-double	finalresume(double sal, double dep, double rest, double pourcent)
+double	final_resume(double sal, double dep, double rest, double pourcent)
 {
 	printf("\n     ===  RESUME  ===\n");
 	printf("\nVotre salaire est de : %.2lf€\n", sal);
@@ -67,6 +67,6 @@ int	main(void)
 	depense = calcul_depense();
 	reste = calcul_reste(salaire, depense);
 	pourcentage = calcul_pourcentage(salaire, depense);
-	finalresume(salaire, depense, reste, pourcentage);
+	final_resume(salaire, depense, reste, pourcentage);
 	return (0);
 }
