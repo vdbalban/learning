@@ -27,14 +27,20 @@ double	calcul_depense(void)
 	return (depense);
 }
 
-double	calcul_reste_pourcentage(double salaire, double depense)
+double	calcul_reste(double salaire, double depense)
 {
-	double	pourcentage;
 	double	reste;
 
-	pourcentage = (depense / salaire * 100);
 	reste = (salaire - depense);
-	return (pourcentage, reste);
+	return (reste);
+}
+
+double	calcul_pourcentage(double salaire, double depense)
+{
+	double	pourcentage;
+
+	pourcentage = (depense / salaire * 100);
+	return (pourcentage);
 }
 
 double	finalresume(double sal, double dep, double rest, double pourcent)
@@ -59,8 +65,8 @@ int	main(void)
 
 	salaire = calcul_salaire();
 	depense = calcul_depense();
-	reste = calcul_reste_pourcentage(salaire, depense);
-	pourcentage = calcul_reste_pourcentage(salaire, depense);
+	reste = calcul_reste(salaire, depense);
+	pourcentage = calcul_pourcentage(salaire, depense);
 	finalresume(salaire, depense, reste, pourcentage);
 	return (0);
 }
