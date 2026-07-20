@@ -27,21 +27,12 @@ double	calcul_depense(void)
 	return (depense);
 }
 
-// double	calcul_reste(double salaire, double depense)
-// {
-// 	double	reste;
-
-// 	reste = (salaire - depense);
-// 	return (reste);
-// }
-
 double	calcul_reste_pourcentage(double salaire, double depense)
 {
 	double	pourcentage;
 	double	reste;
 
 	pourcentage = (depense / salaire * 100);
-	// return (pourcentage);
 	reste = (salaire - depense);
 	return (pourcentage, reste);
 }
