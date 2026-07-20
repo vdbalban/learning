@@ -27,48 +27,49 @@ double	calcul_depense(void)
 	return (depense);
 }
 
-double	calcul_reste(double salaire, double depense)
-{
-	double	reste;
+// double	calcul_reste(double salaire, double depense)
+// {
+// 	double	reste;
 
-	reste = (salaire - depense);
-	return (reste);
-}
+// 	reste = (salaire - depense);
+// 	return (reste);
+// }
 
-double	calcul_pourcentage(double salaire, double depense)
+double	calcul_reste_pourcentage(double salaire, double depense)
 {
 	double	pourcentage;
+	double	reste;
 
 	pourcentage = (depense / salaire * 100);
-	return (pourcentage);
+	// return (pourcentage);
+	reste = (salaire - depense);
+	return (pourcentage, reste);
 }
 
-double	finalresume(double salaire, double depense)
+double	finalresume(double sal, double dep, double rest, double pourcent)
 {
-	double	reste;
-	double	pourcentage;
-
-	reste = calcul_reste(salaire, depense);
-	pourcentage = calcul_pourcentage(salaire, depense);
 	printf("\n     ===  RESUME  ===\n");
-	printf("\nVotre salaire est de : %.2lf€\n", salaire);
-	printf("Total des dépenses effectuées : %.2lf€\n", depense);
-	printf("Restant sur salaire : %.2lf€\n", reste);
-	printf("Pourcentage fonds dépensé : %.1lf%%\n", pourcentage);
+	printf("\nVotre salaire est de : %.2lf€\n", sal);
+	printf("Total des dépenses effectuées : %.2lf€\n", dep);
+	printf("Restant sur salaire : %.2lf€\n", rest);
+	printf("Pourcentage fonds dépensé : %.1lf%%\n", pourcent);
 	printf("\n     ===          ===\n\n");
 	return (0);
 }
 //%% pour faire reconnaitre % comme caractere
+// Ligne 46 : Rename pour ligne longue norminette
 
 int	main(void)
 {
 	double	salaire;
 	double	depense;
+	double	reste;
+	double	pourcentage;
 
-	salaire = 0;
-	depense = 0;
 	salaire = calcul_salaire();
 	depense = calcul_depense();
-	finalresume(salaire, depense);
+	reste = calcul_reste_pourcentage(salaire, depense);
+	pourcentage = calcul_reste_pourcentage(salaire, depense);
+	finalresume(salaire, depense, reste, pourcentage);
 	return (0);
 }
