@@ -16,4 +16,4 @@ int	main(void)
 }
 
 // Crée un prog basé sur les pointeur pour une addition 
-// avec header et ficier function
+// avec header et fichier function
