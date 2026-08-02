@@ -1,4 +1,4 @@
 #include <stdio.h>
 
-int somme_tableau (int tableau[],int tailletab);
-int moyenne_tableau (int tableau[],int tailletab);
+int		somme_tableau(int tableau[], int tailletab);
+float	moyenne_tableau(int tableau[], int tailletab);

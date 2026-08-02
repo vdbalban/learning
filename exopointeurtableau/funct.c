@@ -1,31 +1,35 @@
 #include <stdio.h>
 #include "funct.h"
 
-int somme_tableau (int tableau[], int tailletab)
+int	somme_tableau(int tableau[], int tailletab)
 {
-    int resultat;
-    int i;
-    
-    for (i = 0 ; i < tailletab ; i++)
-    {
-        (resultat += tableau[i]);
-    }
+	int	resultat;
+	int	i;
 
-    return(resultat);
+	resultat = 0;
+	i = 0;
+	for (i; i < tailletab; i++)
+	{
+		(resultat += tableau[i]);
+	}
+	return (resultat);
 }
 
-int moyenne_tableau (int tableau[],int tailletab)
+float	moyenne_tableau(int tableau[], int tailletab)
 {
-    int moyenne;
-    int resultat;
-    int i;
-    
-    for (i = 0 ; i < tailletab ; i++)
-    {
-        (resultat += tableau[i]);
-    }
-    
-    moyenne = (resultat / tailletab);
+	float	moyenne;
+	float	resultat;
+	int		i;
 
-    return (moyenne);
+	resultat = 0;
+	i = 0;
+	while (i < tailletab)
+	{
+		(resultat += tableau[i]);
+		i++;
+	}
+	return ((float)resultat / (float)tailletab);
 }
+
+// Changement de format de condition pour moyenne_tableau
+// pour entrer dans le cadre de la norminette
