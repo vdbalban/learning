@@ -10,8 +10,8 @@ int main(void)
    
     tailletab = 10;
 
+    resultat = somme_tableau(tableau, tailletab);
     moyenne = moyenne_tableau(tableau, tailletab);
-    resultat = somme_tableau(tableau,tailletab);
     printf("\n***La somme des valeurs dans le tableau est : %d ***\n", resultat);
     printf("\n***La moyenne des nombres dans le tableau est de : %d ***\n\n", moyenne);
 
