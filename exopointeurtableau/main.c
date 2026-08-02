@@ -3,13 +3,17 @@
 
 int main(void)
 {
-    int tableau[10] = {1, 58, 98, 45, 78, 47, 58, 98, 25, 47};
-    int i = 0;
+    int tableau[10] = {15, 58, 98, 45, 78, 47, 58, 98, 25, 47};
+    int tailletab;
+    int resultat;
+    int moyenne;
+   
+    tailletab = 10;
 
-    for (i = 0; i < 10; i++)
-    {
-        printf("\nnombre cellule %d est égale a %d\n", i, tableau[i]);
-    }
+    moyenne = moyenne_tableau(tableau, tailletab);
+    resultat = somme_tableau(tableau,tailletab);
+    printf("\n***La somme des valeurs dans le tableau est : %d ***\n", resultat);
+    printf("\n***La moyenne des nombres dans le tableau est de : %d ***\n\n", moyenne);
 
     return (0);
 }
