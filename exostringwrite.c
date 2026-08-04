@@ -3,7 +3,7 @@
 
 int	main(void)
 {
-	char	chaine[5];
+	char	chaine[6];
 	int		i;
 
 	chaine[0] = 'S';
@@ -11,6 +11,7 @@ int	main(void)
 	chaine[2] = 'L';
 	chaine[3] = 'U';
 	chaine[4] = 'T';
+	chaine[5] = '\0';
 	i = 0;
 	while (i < 5)
 	{
