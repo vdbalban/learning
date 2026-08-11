@@ -5,11 +5,12 @@ void	ft_print_comb(void);
 void	ft_print_comb(void)
 {
 	char	n;
-
+	
+	n = "000"; 
 	while (n < 999)
 	{
-		n = 0;
-		ssize_t write(int 1, n, 1);	
+		write(1, , 5);
+		n++;	
 	}
 }	
 
