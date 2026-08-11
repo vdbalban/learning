@@ -1,2 +1,10 @@
 a.out
 exodepensetest.c
+.exodepense.c.swp
+learn_pointeur/funct.h.gch
+function.h.gch
+*.gch
+*.o
+*.envv
+*.env
+coursstring.exe
