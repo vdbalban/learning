@@ -8,3 +8,6 @@ function.h.gch
 *.envv
 *.env
 coursstring.exe
+.vscode/
+gitignore
+.gitignore
