@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "funct.h"
 
+#ifndef DEF_funct
+#define DEF_funct
+
 int	somme_tableau(int tableau[], int tailletab)
 {
 	int	resultat;
@@ -30,6 +33,8 @@ float	moyenne_tableau(int tableau[], int tailletab)
 	}
 	return ((float)resultat / (float)tailletab);
 }
+
+#endif
 
 // Changement de format de condition pour moyenne_tableau
 // pour entrer dans le cadre de la norminette
