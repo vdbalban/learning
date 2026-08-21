@@ -10,7 +10,7 @@ int main(void)
 
     donnee.y = 25;
     donnee.x = 20;
-
+    
     impression(donnee.aire, donnee.y, donnee.x);
     return (0);
 }
