@@ -9,7 +9,7 @@ int main(void)
     Coord donnee;
 
     donnee.y = 25;
-    donnee.x = 20;
+    donnee.x = 10;
     
     impression(donnee.aire, donnee.y, donnee.x);
     return (0);

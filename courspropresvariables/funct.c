@@ -9,8 +9,7 @@ void impression (char *r, int y,int x)
 {
     int resultat_aire = (y*x);
 
-    strcpy(r, "L'aire de mes coordonnées est..");
-    sprintf(r, "L'aire de mes coordonnées y=%d et x=%d est... %d\n", y, x, resultat_aire);
+    sprintf(r, "Le nombres de pixels pour y=%d et x=%d est... %d pixels\n", y, x, resultat_aire);
     size_t  count = strlen(r);
     write(1, r, count);
 }
