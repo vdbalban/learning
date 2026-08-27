@@ -1,0 +1,2 @@
+Ligne 1 : Ceci est la première ligne du test2.txt
+Ligne 2 : affiché car fgets est placé dans une boucle attendant une fin = NULL
