@@ -15,8 +15,8 @@ int main(void)
     scanf("%d", &reference);
     quantite = reference;
     
-    allocref = malloc(sizeof(reference));
-    allocquant = malloc(sizeof(quantite));
+    allocref = malloc((reference) * sizeof(int));
+    allocquant = malloc((quantite) * sizeof(int));
 
     if(allocref != NULL && allocquant != NULL)
     {
