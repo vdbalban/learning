@@ -3,8 +3,8 @@
 #include <unistd.h>
 #include <string.h>
 
-#define DEF_LECTURE
-#ifdef DEF_LECTURE
+#ifndef FONCTION_H
+#define FONCTION_H
 
 void vider_buffer();
 int	lire(char *chain, int longueur);
